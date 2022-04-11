@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="wt">Weight in pounds</string>
+    <string name="ht">Height in inches</string>
+    <string name="calculate">Calculate</string>
+    <string name="textview_text">Your BMI is</string>
+</resources>

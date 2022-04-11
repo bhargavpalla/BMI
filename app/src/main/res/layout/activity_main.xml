@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="@dimen/editext_wdt"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/mgn_top_wt"
+        android:hint="@string/wt"
+        >
+
+    </EditText>
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="@dimen/editext_wdt"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weight"
+        android:layout_marginTop="@dimen/mgn_top"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="@string/ht"
+        >
+
+    </EditText>
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="@dimen/editext_wdt"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/gray"
+        android:textColor="@color/black"
+        android:layout_below="@+id/height"
+        android:layout_marginTop="@dimen/mgn_top"
+        android:onClick="funcal"
+        android:text="@string/calculate"
+        >
+
+    </Button>
+    <TextView
+        android:id="@+id/text_view_bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text = "@string/textview_text"
+        android:layout_below="@id/calculate"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/mgn_top"
+        android:fontFamily="sans-serif"
+        >
+
+    </TextView>
+    <ImageView
+        android:id="@+id/img_bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_bmi"
+        tools:src="@drawable/healthy"
+        android:layout_marginTop="@dimen/mgn_top"
+        android:layout_centerHorizontal="true"
+        >
+
+    </ImageView>
+
+
+
+
+</RelativeLayout>
